@@ -1,5 +1,5 @@
 [package]
-name = "pac-man"
+name = "proxy-man"
 version = "1.0.0"
 authors = ["WanzenBug <moritz@wanzenbug.xyz>"]
 edition = "2018"

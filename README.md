@@ -1,4 +1,4 @@
-# PAC-man
+# proxy-man
 
 Create [PAC] files on demand.
 

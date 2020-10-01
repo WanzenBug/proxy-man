@@ -1,1 +1,1 @@
-web: ./target/release/pac-man 0.0.0.0:$PORT
+web: ./target/release/proxy-man 0.0.0.0:$PORT
