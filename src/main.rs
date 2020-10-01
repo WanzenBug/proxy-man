@@ -40,8 +40,11 @@ async fn index(web::Query(rules): web::Query<Vec<Rule>>) -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    let mut args = std::env::args();
+    let _appname = args.next().expect("program name must exist");
+    let iface = args.next().unwrap_or_else(|| "0.0.0.0:8080".to_string());
     HttpServer::new(|| App::new().service(index))
-        .bind("0.0.0.0:8080")?
+        .bind(iface)?
         .run()
         .await
 }
